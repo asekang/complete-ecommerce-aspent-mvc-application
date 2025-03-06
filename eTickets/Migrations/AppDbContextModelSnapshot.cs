@@ -38,7 +38,7 @@ namespace eTickets.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("ProfilePcitureURL")
+                    b.Property<string>("ProfilePictureURL")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -59,7 +59,7 @@ namespace eTickets.Migrations
 
                     b.HasIndex("MovieId");
 
-                    b.ToTable("Actor_Movies");
+                    b.ToTable("Actors_Movies");
                 });
 
             modelBuilder.Entity("eTickets.Models.Cinema", b =>
@@ -150,7 +150,7 @@ namespace eTickets.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("ProfilePcitureURL")
+                    b.Property<string>("ProfilePictureURL")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
